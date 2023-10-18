@@ -1,21 +1,20 @@
-package com.aittaarabt.kafkacloud;
+package com.CHAHIL.kafkacloud;
 
 import org.springframework.kafka.core.KafkaTemplate;
 import org.springframework.web.bind.annotation.*;
-
 @RestController
-@RequestMapping("/kafka-supplier")
-public class SupplierController {
+@RequestMapping("/kafka")
+public class KafkaProducerController {
 
     private final KafkaTemplate<Integer, String> kafkaTemplate;
 
-    public SupplierController(KafkaTemplate<Integer, String> kafkaTemplate) {
+    public KafkaProducerController(KafkaTemplate<Integer, String> kafkaTemplate) {
         this.kafkaTemplate = kafkaTemplate;
     }
 
     @PostMapping("/publish/{message}")
     public String sendMessageToKafkaTopic(@PathVariable String message) {
-        kafkaTemplate.send("supplierTopic", 1, message);
-        return "Message envoyé avec succès au service fournisseur Kafka !";
+        kafkaTemplate.send("testTopic", 1, message);
+        return "Message envoyé avec succès !";
     }
 }

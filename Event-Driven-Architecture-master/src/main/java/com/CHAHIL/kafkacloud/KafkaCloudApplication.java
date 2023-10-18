@@ -1,4 +1,4 @@
-package com.aittaarabt.kafkacloud;
+package com.CHAHIL.kafkacloud;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

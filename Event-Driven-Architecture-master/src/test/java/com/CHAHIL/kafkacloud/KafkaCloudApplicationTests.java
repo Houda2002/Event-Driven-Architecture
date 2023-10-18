@@ -1,4 +1,4 @@
-package com.aittaarabt.kafkacloud;
+package com.CHAHIL.kafkacloud;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
